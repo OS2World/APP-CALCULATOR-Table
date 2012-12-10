@@ -1,0 +1,45 @@
+Table is combination of an ASCII character code chart and a tool to convert and display binary, decimal, hexadecimal and ascii representations of a string. 
+
+How to use Table 
+
+Run TableWPS.cmd Rexx script to create program object on Desktop. Start executable (Table.exe). If you want to copy system clipboard contents to entry field, run Table with parameter 1 (Table.exe 1). 
+
+To copy single character to Clipboard, select it in the list on the left side and double-click 1st mouse button or press Enter. 
+
+To convert string: 
+
+1.Select source format (select radio button: BIN, DEC, HEX or ASCII). 
+
+2.Enter string you want to convert, or paste it from Clipboard (press Paste button). When you enter string in BIN, DEC or HEX format, there MUST be space between character representations. 
+
+3.Press Convert button. In Result window you can see binary, decimal, hexadecimal and ascii representations of a string. 
+NULL byte ['00'x] is displayed as BLANK ['FF'x] in ASCII format. 
+
+4.You can copy result to Clipboard if you press button on the right side, or save result to file: table.txt. 
+If you want to save result to file you can select file name, line length, display (or not) spaces between characters in binary, decimal and hexadecimal representations of a string, representations of a string to display (binary, decimal, hexadecimal and/or ascii). 
+
+If you have two prepared system code pages you can switch between them and convert and display string. Read more about code pages. 
+
+
+Note: Source code for Table is included - to modify source, you need DrDialog, a visual programming environment for REXX.
+
+  
+
+COPYRIGHT
+
+
+
+Author Goran Ivankovic 
+Address Ulica Josipa Poduje 8 
+HR-52100 Pula 
+Croatia 
+email duga1@pu.tel.hr 
+Home page http://Goran_Ivankovic.tripod.com/ 
+
+This program is provided free under the terms of the GPL. You can use it, modify it and distribute it. If you modify or distribute it the new source must accompany the distribution. I would appreciate a copy of any changes. 
+You may not distribute Table 1.11 in any way which leads to your making a profit from it. 
+
+The author makes no representations about the accuracy or suitability of this material for any purpose. It is provided "as is", without any express or implied warranties. The author will assume no liability for damages either from the direct use of this product or as a consequence of the use of this product. 
+
+OS/2 is Trademark of International Bussines Machines Corporation 
+DrDialog is Copyright of International Bussines Machines Corporation 

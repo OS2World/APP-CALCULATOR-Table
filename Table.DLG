@@ -1,0 +1,29 @@
+#include "OS2.H"
+
+DLGTEMPLATE 100 LOADONCALL MOVEABLE DISCARDABLE
+BEGIN
+    DIALOG "Table 1.11", 100, 115, 87, 340, 157, 
+           WS_SYNCPAINT,
+           FCF_SYSMENU | FCF_TITLEBAR | FCF_MINBUTTON | FCF_DBE_APPSTAT
+    BEGIN
+        LISTBOX         102, 7, 21, 161, 118, WS_GROUP | LS_NOADJUSTPOS
+        AUTORADIOBUTTON "BIN", 111, 183, 137, 36, 10, WS_GROUP
+        AUTORADIOBUTTON "DEC", 112, 220, 137, 36, 10
+        AUTORADIOBUTTON "HEX", 113, 258, 137, 36, 10
+        AUTORADIOBUTTON "ASC", 114, 295, 136, 36, 10
+        MLE             "", 115, 184, 33, 147, 101,
+                        NOT WS_GROUP | MLS_WORDWRAP | MLS_VSCROLL | MLS_IGNORETAB
+        PUSHBUTTON      "Paste", 116, 183, 21, 42, 12
+        PUSHBUTTON      "Delete", 117, 236, 21, 42, 12
+        PUSHBUTTON      "Convert", 118, 290, 21, 42, 12
+        PUSHBUTTON      "CP", 121, 182, 3, 42, 13, NOT WS_VISIBLE | WS_GROUP
+        PUSHBUTTON      "Help", 122, 236, 3, 42, 13
+        PUSHBUTTON      "Exit", 123, 291, 3, 42, 13
+        CONTROL         "BINARY    DEC  HEX ASCII", 104, 3, 17, 172, 137, "CANVAS",
+                        WS_VISIBLE | WS_CLIPSIBLINGS | 13600
+        CONTROL         "", 103, 179, 17, 158, 137, "CANVAS",
+                        WS_VISIBLE | WS_CLIPSIBLINGS | 9504
+        CONTROL         "", 199, 3, 3, 172, 13, "CANVAS",
+                        WS_VISIBLE | WS_CLIPSIBLINGS | 24608
+    END
+END
