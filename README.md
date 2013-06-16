@@ -9,7 +9,7 @@ GNU GPL V2
 
 COMPILE TOOLS
 ==============
-- 
+- DrDialog
 
 AUTHORS
 =============
